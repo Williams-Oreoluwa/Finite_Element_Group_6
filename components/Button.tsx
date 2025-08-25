@@ -9,7 +9,7 @@ const Button = ({ label, onClick }: Button) => {
   return (
     <button
       onClick={onClick}
-      className="text-md h-fit text-amber-50 text-[20px] rounded-2xl w-fit p-4 bg-blue-500 hover:scale-105 cursor-pointer"
+      className="text-md h-fit text-amber-50 text-[16px] rounded-2xl w-fit max-w-[292px] p-4 bg-[#000000] hover:scale-105 cursor-pointer"
     >
       {label}
     </button>
