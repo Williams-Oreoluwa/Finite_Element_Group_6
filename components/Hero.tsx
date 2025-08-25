@@ -24,7 +24,7 @@ const data: UpdatedRow[] = [
 
 const Hero = ({ router }: Router) => {
   return (
-    <main className="bg-white p-20 flex  items-center capitalize justify-center font-bold text-4xl">
+    <main className="p-20 flex  items-center capitalize justify-center font-bold text-4xl">
       <div className="max-w-[1280px] w-full text-center flex flex-col gap-y-10 items-center justify-center-safe">
         <h1 className="text-[24px]">Finite element project for Group 6</h1>
         <h2 className="text-[24px]">Lecturer : Dr Oyelade</h2>
