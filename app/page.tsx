@@ -1,14 +1,14 @@
 'use client'
 
 import Hero from "@/components/Hero";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 
 
 export default function Home() {
-  const router = useRouter()
+  // const router = useRouter()
   return (
     <main className={`flex flex-col gap-6`}>
-      <Hero router={router} />
+      <Hero />
     </main>
   );
 }
