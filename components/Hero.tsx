@@ -1,11 +1,11 @@
 import React from "react";
-import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
+// import { AppRouterInstance } from "next/dist/shared/lib/app-router-context.shared-runtime";
 import Button from "./Button";
-import Link from "next/link";
+// import Link from "next/link";
 
-type Router = {
-  router: AppRouterInstance;
-};
+// type Router = {
+//   router: AppRouterInstance;
+// };
 
 interface Row {
   id: number;
@@ -22,14 +22,14 @@ const data: UpdatedRow[] = [
   { id: 3, name: "Victor", matricNumber: 444 },
 ];
 
-const Hero = ({ router }: Router) => {
+const Hero = () => {
   return (
-    <main className="p-20 flex  items-center capitalize justify-center font-bold text-4xl">
-      <div className="max-w-[1280px] w-full text-center flex flex-col gap-y-10 items-center justify-center-safe">
+    <main className="p-10 flex  items-center capitalize justify-center font-bold text-4xl">
+      <div className="max-w-[1280px] w-full text-center flex flex-col gap-y-6 items-center justify-center-safe">
         <h1 className="text-[24px]">Finite element project for Group 6</h1>
         <h2 className="text-[24px]">Lecturer : Dr Oyelade</h2>
         <h2 className="text-[24px]">Course Code : CEG 882</h2>
-        <div className="flex flex-col gap-6 text-[14px] items-center justify-center p-4 lg:w-1/2 w-full overflow-x-auto">
+        <div className="flex flex-col gap-3 text-[14px] items-center justify-center p-4 lg:w-1/2 w-full overflow-x-auto">
           <h2 className="text-[24px]">Group Memebers</h2>
           <table className="table-auto max-w-[800px] border-collapse border-y-0 border-gray-300 w-full">
             <thead>
@@ -57,17 +57,16 @@ const Hero = ({ router }: Router) => {
           </table>
         </div>
         <div className="flex items-center justify-center gap-2.5 flex-wrap">
-          <Button
+          {/* <Button
             label="Get Started"
             onClick={() => router.push("/solution")}
-          />
-          <Link
-            href={"https://github.com/Williams-Oreoluwa/Finite_Element_Group_6"}
-            target="_blank"
-            rel="noopener noreferrer"
+          /> */}
+          <a
+            href="/FEM_Task_30_Meshes(1).zip"
+            download="FEM_Task_30_Meshes(1).zip"
           >
-            <Button label="View Code" />
-          </Link>
+            <Button label="Download Code" />
+          </a>
         </div>
       </div>
     </main>
