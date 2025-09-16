@@ -26,6 +26,7 @@ const data: UpdatedRow[] = [
   { id: 7, name: "Osho Oladipupo Oluwasegun", matricNumber: 249042067 },
   { id: 8, name: "Okiemen Paul", matricNumber: 249042082 },
   { id: 9, name: "Oluwole Olorunwa Owa", matricNumber: 140402040 },
+  { id: 10, name: "Ajayi Muyide Ayodele", matricNumber: 249042055 },
 ];
 
 const Hero = () => {
